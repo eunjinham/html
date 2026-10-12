@@ -1,0 +1,65 @@
+div, input,textarea, button {
+	box-sizing: border-box;
+}
+
+.container {
+    width : 100%;
+    height : auto;
+    padding : 30px 50px;
+    background-color : #B2CCD6;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 0px;
+    border-radius: 12px;
+    background-color: white;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+th, td {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    color: #98B1B9;
+}
+
+
+.cart-table td:nth-child(3),.cart-table td:nth-child(4) {
+    text-align: center;
+}
+
+h4 {
+    margin: 0;
+    color: black    ;
+}
+
+.cart-table td:nth-child(2) p {
+    margin-top: 5px;
+}
+
+.cart-table td:nth-child(5),.total {
+    color: #133761;
+    font-weight: bold;
+    text-align: right;
+}
+
+.edit-cart-link {
+    color: #2D5A8C;
+}
+
+.payment-button {
+    border: none;
+    border-radius: 5px;
+    background-color: #133761;
+    color: white;
+    float: right;
+    width: 250px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.payment-button:hover {
+    background-color: #2D5A8C;
+}
