@@ -1,0 +1,59 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.sidebar {
+    width: 150px;
+    height: 100vh;
+    background: #484bb3;
+    position: fixed;
+    z-index: 5;
+    color : white;
+    transition: all 0.5s;
+    transform: translateX(-100px);
+
+    div {
+        margin: 30px 0px 0px 15px;
+    }
+
+    i {
+        transition: all 0.5s;
+        transform: translateX(100px);
+    }
+}
+
+.sidebar:hover {
+    transition: all 0.5s;
+    transform: translateX(0px);
+
+    i {
+        transition: all 0.5s;
+        transform: translateX(0px);
+    }
+}
+
+.input-animation{
+  width: 150px;
+  transition: width 1s;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  
+}
+.input-animation:focus {
+  width: 300px;
+}
+
+.search {
+    margin-left: 100px;
+}
+
+.badge {
+    position : absolute;
+    top:1px;
+    right: 90px;
+}
+
+.text-bg-primary {
+    margin-top: 8px;
+}

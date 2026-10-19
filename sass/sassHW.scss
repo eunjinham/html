@@ -1,0 +1,58 @@
+div {
+    box-sizing: border-box;
+}
+
+.sh-list {
+    li {
+        list-style: none;
+        padding: 15px;
+        border: 1px solid #eee;
+        
+    }
+
+    li:hover {
+        background: skyblue;
+        color: white;
+    }    
+}
+
+@mixin p-color($background, $font) {
+    padding: 15px;
+    margin: 5px;  
+    background-color: $background;
+    color: $font;
+    border-radius: 5px;
+}
+
+.p-green {
+    @include p-color(#DFF0D8, #457B41)
+}
+
+.p-blue {
+    @include p-color(#D9EDF7, #32708F)
+}
+
+.p-yellow {
+    @include p-color(#FCF8E3, #A76F40)
+}
+
+.font-b {
+    font-weight: bold;
+}
+
+@mixin row-width($width) {
+    float: left;
+    width: $width;
+    padding: 15px;
+}
+
+
+.row {
+    .col-6 {
+        @include row-width(50%)
+    }
+
+    .col-4 {
+         @include row-width(100%/3)
+    }
+}

@@ -1,0 +1,52 @@
+div {
+  box-sizing: border-box;
+}
+
+.sh-list li {
+  list-style: none;
+  padding: 15px;
+  border: 1px solid #eee;
+}
+.sh-list li:hover {
+  background: skyblue;
+  color: white;
+}
+
+.p-green {
+  padding: 15px;
+  margin: 5px;
+  background-color: #DFF0D8;
+  color: #457B41;
+  border-radius: 5px;
+}
+
+.p-blue {
+  padding: 15px;
+  margin: 5px;
+  background-color: #D9EDF7;
+  color: #32708F;
+  border-radius: 5px;
+}
+
+.p-yellow {
+  padding: 15px;
+  margin: 5px;
+  background-color: #FCF8E3;
+  color: #A76F40;
+  border-radius: 5px;
+}
+
+.font-b {
+  font-weight: bold;
+}
+
+.row .col-6 {
+  float: left;
+  width: 50%;
+  padding: 15px;
+}
+.row .col-4 {
+  float: left;
+  width: 33.3333333333%;
+  padding: 15px;
+}/*# sourceMappingURL=sassHW.css.map */

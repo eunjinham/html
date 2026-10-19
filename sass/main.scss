@@ -1,0 +1,75 @@
+/* @use 예제 */
+@use 'reset';
+
+/* 변수 예제 */
+$main-color : #2a4cb2;
+$main-size : 20px;
+
+.background {
+    background-color: $main-color;
+    font-size: $main-size + 2px;
+}
+
+.box {
+    color: $main-color;
+    font-size: ($main-size * 2);
+}
+
+/* nesting 예제 */
+.main-bg {
+    h4 {
+        font-size: 16px;
+    }
+
+    button {
+        color: red;
+    }
+}
+
+/* @extend 예제 */
+%btn {
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+}
+
+.btn-green {
+    @extend %btn;
+    color: green;
+}
+
+%div-main {
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+}
+
+/* @extend 숙제 */
+.div-red {
+    @extend %div-main;
+    background-color: red;
+}
+
+.div-green {
+    @extend %div-main;
+    background-color: green;
+}
+
+.div-blue {
+    @extend %div-main;
+    background-color: blue;
+}
+
+/* @mixin 예제 */
+@mixin fontStyle($size, $param) {
+    font-size: $size;
+    #{$param}: 1px;
+}
+
+h2 {
+    @include fontStyle(30px, letter-spacing)
+}
+
+h3 {
+    @include fontStyle(40px, width)
+}

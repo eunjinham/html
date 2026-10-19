@@ -1,0 +1,126 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/* 텍스트 애니 */
+.ani-text {
+    margin-top: 0px;
+   text-align: center;
+}
+
+.ani-text:hover {
+    animation-name: moveText;
+    animation-duration: 1s;
+}
+
+@keyframes moveText {
+    0% {
+        transform: translateX(0px);
+    }
+
+    50% {
+        transform: translateX(-100px);
+    }
+
+    75% {
+        transform: translateX(100px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+/* 버튼 애니 */
+.ani-button {
+    background-color: skyblue;
+    border-radius: 5px;
+    color: white;
+    padding: 10px;
+    margin-left: 300px;
+    border: none;
+}
+
+.ani-button:hover {
+    animation-name: moveButton;
+    animation-duration: 0.5s;
+}
+
+@keyframes moveButton {
+    0% {
+        transform: rotate(-10deg);
+    }
+
+    33% {
+        transform: rotate(10deg);
+    }
+
+    66% {
+        transform: rotate(-10deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+/* 아이콘 애니 */
+.fa-plus {
+    margin: 100px;
+}
+
+.fa-plus:hover {
+    animation-name: moveicon;
+    animation-duration: 1s;
+}
+
+@keyframes moveicon {
+    0% {
+        transform: rotate(-30deg);
+    }
+
+    100% {
+        transform: rotate(50deg);
+        scale: calc(2);
+    }
+}
+
+.ani-navbar {
+  width: 200px;
+  background: black;
+  color: white;
+  height: 100%;
+  padding: 25px;
+  position: fixed;
+  z-index: 5;
+  text-align: right;
+  transition: all 1s;
+  transform: translateX(-150px);
+}
+
+.ani-navbar:hover {
+  transform: translateX(0px);
+  text-align: center;
+}
+
+.ani-navbar:hover p {
+  animation-name: slide;
+  animation-duration: 1s;
+} 
+
+@keyframes slide {
+    0% {
+        transform: translateX(-250px) 
+    }
+
+    50% {
+        transform: translateX(50px) 
+        skewX(-30deg)
+    }
+
+    100% {
+        transform: translateX(0px)
+    }
+}
+

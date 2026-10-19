@@ -1,0 +1,69 @@
+@charset "UTF-8";
+/* @use 예제 */
+body {
+  margin: 0;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+/* 변수 예제 */
+.background {
+  background-color: #2a4cb2;
+  font-size: 22px;
+}
+
+.box {
+  color: #2a4cb2;
+  font-size: 40px;
+}
+
+/* nesting 예제 */
+.main-bg h4 {
+  font-size: 16px;
+}
+.main-bg button {
+  color: red;
+}
+
+/* @extend 예제 */
+.btn-green {
+  width: 100px;
+  height: 100px;
+  padding: 20px;
+}
+
+.btn-green {
+  color: green;
+}
+
+.div-blue, .div-green, .div-red {
+  width: 200px;
+  height: 200px;
+  padding: 20px;
+}
+
+/* @extend 숙제 */
+.div-red {
+  background-color: red;
+}
+
+.div-green {
+  background-color: green;
+}
+
+.div-blue {
+  background-color: blue;
+}
+
+/* @mixin 예제 */
+h2 {
+  font-size: 30px;
+  letter-spacing: 1px;
+}
+
+h3 {
+  font-size: 40px;
+  width: 1px;
+}/*# sourceMappingURL=main.css.map */
